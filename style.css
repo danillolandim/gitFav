@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --text-color: #ffffff;
+
+  --hue: 194;
+  --primary-color: #4A808C;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: #000000;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.search input {
+  height: 3.2rem;
+  width: 32rem;
+  border: 1px solid #06181C;
+  background-color: #06181C;
+  border-radius: .4rem 0 0 .4rem;
+  padding: 0 .8rem;
+  color: #a19d9d;
+}
+
+.search button {
+  background-color: #065E7C;
+  border-radius:  .4rem;
+  height: 3.2rem;
+  width: 12rem;
+  border: none;
+  padding: 2rem, 1rem;
+
+  
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.search button:hover {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border-radius: 1.2rem;
+  border-spacing: 0;
+  border: 1px solid #4A808C;
+  
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+
+
+}
+
+table th {
+  background: #092D38;
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+  
+}
+
+table th:first-child {
+  
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  
+  border-top-right-radius: 1.2rem;
+}
+
+
+table tr:nth-child(even) {
+  
+  background: #06181C;
+
+}
+table tr:nth-child(odd) {
+  background: #0c0b0b;
+  
+}
+
+table tbody td:first-child{
+  border-bottom-left-radius: 1.2rem;
+
+}
+
+table tbody td:last-child{
+  border-bottom-right-radius: 1.2rem;
+}
+
+table td {
+
+  padding: 1.5rem;
+  text-align: left;
+
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: red;
+
+  cursor: pointer;
+}
+
